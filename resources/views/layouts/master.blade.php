@@ -13,7 +13,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 @include('layouts.partials._navbar')
 
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
+    <div class="content-wrapper" id="app">
+        @include('flash::message')
        @yield('content')
     </div>
     <!-- /.content-wrapper -->
